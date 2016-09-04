@@ -1,0 +1,22 @@
+{ "extensionName": "Jumping Sumo",
+	"extensionPort": 9000,
+	"blockSpecs": [
+	    [" ", "Verbinde Sumo IP %s Port %n", "connect", "192.168.2.1", 44444],
+				["w", "Vorwärts mit Geschwindigkeit %n für %n ms", "forward", 40, 500],
+				["w", "Vorwärts ", "forward"],
+				["w", "Rückwärts mit Geschwindigkeit %n für %n ms", "backward", 40, 500],
+				["w", "Rückwärts", "backward"],
+				["w", "Rechts", "right"],
+				["w", "Links", "left"],
+				["w", "Nach Links um %n Grad", "left", 45],
+				["w", "Nach Rechts um %n Grad", "right", 45],
+  			["w", "Springe %m.jumpType", "jump", "hoch"],
+  			["w", "Kunststück %m.trickType", "trick", "Drehung"],
+				[" ", "Sumo aus", "close"],
+    ],
+    "menus": {
+        "jumpType": ["hoch", "weit"],
+        "trickType": ["Drehung", "Drehsprung","Schwanken","Tippen","Metronom","Ondulation","Slalom"],
+    }
+
+}
