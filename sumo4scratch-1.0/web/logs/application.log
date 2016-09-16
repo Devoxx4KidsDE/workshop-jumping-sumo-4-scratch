@@ -1,0 +1,16 @@
+2016-09-16 22:33:13 +0200 [INFO] from play.api.libs.concurrent.ActorSystemProvider in main - Starting application default Akka system: application
+2016-09-16 22:33:13 +0200 [INFO] from play.api.Play in main - Application started (Prod)
+2016-09-16 22:33:13 +0200 [INFO] from play.core.server.NettyServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2016-09-16 22:35:35 +0200 [INFO] from application in application-akka.actor.default-dispatcher-2 - resetting DroneConnection and running Command
+2016-09-16 22:35:35 +0200 [INFO] from application in application-akka.actor.default-dispatcher-3 - resetting DroneConnection and running Command
+2016-09-16 22:40:39 +0200 [INFO] from application in application-akka.actor.default-dispatcher-5 - resetting DroneConnection and running Command
+2016-09-16 22:40:39 +0200 [INFO] from application in application-akka.actor.default-dispatcher-5 - Connecting: 192.168.2.1 : 44444 at my wireless lan
+2016-09-16 22:40:39 +0200 [INFO] from de.devoxx4kids.dronecontroller.network.WirelessLanDroneConnection in application-akka.actor.default-dispatcher-5 - Creating WirelessLanDroneConnection for 192.168.2.1:44444...
+2016-09-16 22:40:39 +0200 [INFO] from de.devoxx4kids.dronecontroller.DroneController in application-akka.actor.default-dispatcher-5 - Creating controllers.DroneController
+2016-09-16 22:40:40 +0200 [INFO] from de.devoxx4kids.dronecontroller.network.WirelessLanDroneConnection in application-akka.actor.default-dispatcher-5 - Connected to drone - Handshake completed with HandshakeResponse{status='0', c2d_port=54321, arstream_fragment_size=65000, arstream_fragment_maximum_number=4, arstream_max_ack_interval=-1, c2d_update_port=51, c2d_user_port=21}
+2016-09-16 22:40:43 +0200 [INFO] from application in application-akka.actor.default-dispatcher-9 - video an
+2016-09-16 22:40:43 +0200 [INFO] from de.devoxx4kids.dronecontroller.listener.multimedia.VideoListener in application-akka.actor.default-dispatcher-9 - init video
+2016-09-16 22:40:49 +0200 [INFO] from application in application-akka.actor.default-dispatcher-7 - taking photo 0
+2016-09-16 22:41:21 +0200 [INFO] from application in application-akka.actor.default-dispatcher-3 - video aus
+2016-09-16 22:41:52 +0200 [INFO] from application in application-akka.actor.default-dispatcher-4 - resetting DroneConnection and running Command
+2016-09-16 22:42:41 +0200 [INFO] from application in application-akka.actor.default-dispatcher-9 - resetting DroneConnection and running Command

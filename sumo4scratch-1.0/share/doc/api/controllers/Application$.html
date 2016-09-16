@@ -3190,6 +3190,23 @@ which Scratch is based on needs to work.</p><div class="fullcomment"><div class=
 which Scratch is based on needs to work. This basically forwards to the crossdomain view which contains
 that static information.
 </p></div></div>
+    </li><li name="controllers.Application#currentPhoto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="currentPhoto:Int"></a>
+      <a id="currentPhoto:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">currentPhoto</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#controllers.Application$@currentPhoto:Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="play.api.mvc.Results#dechunk" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="dechunk:play.api.libs.iteratee.Enumeratee[Array[Byte],Array[Byte]]"></a>
       <a id="dechunk:Enumeratee[Array[Byte],Array[Byte]]"></a>
@@ -3225,7 +3242,7 @@ that static information.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Results</dd></dl></div>
     </li><li name="controllers.Application#droneConnection" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="droneConnection:de.bischinger.parrot.lib.network.DroneConnection"></a>
+      <a id="droneConnection:de.devoxx4kids.dronecontroller.network.DroneConnection"></a>
       <a id="droneConnection:DroneConnection"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -3233,16 +3250,16 @@ that static information.
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">droneConnection</span><span class="result">: <span class="extype" name="de.bischinger.parrot.lib.network.DroneConnection">DroneConnection</span></span>
+        <span class="name">droneConnection</span><span class="result">: <span class="extype" name="de.devoxx4kids.dronecontroller.network.DroneConnection">DroneConnection</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#controllers.Application$@droneConnection:de.bischinger.parrot.lib.network.DroneConnection" title="Permalink" target="_top">
+      <a href="../index.html#controllers.Application$@droneConnection:de.devoxx4kids.dronecontroller.network.DroneConnection" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="controllers.Application#droneController" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="droneController:de.bischinger.parrot.control.DroneController"></a>
+      <a id="droneController:de.devoxx4kids.dronecontroller.DroneController"></a>
       <a id="droneController:DroneController"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -3250,10 +3267,10 @@ that static information.
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">droneController</span><span class="result">: <span class="extype" name="de.bischinger.parrot.control.DroneController">DroneController</span></span>
+        <span class="name">droneController</span><span class="result">: <a href="../de/devoxx4kids/dronecontroller/DroneController.html" class="extype" name="de.devoxx4kids.dronecontroller.DroneController">DroneController</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#controllers.Application$@droneController:de.bischinger.parrot.control.DroneController" title="Permalink" target="_top">
+      <a href="../index.html#controllers.Application$@droneController:de.devoxx4kids.dronecontroller.DroneController" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -3332,7 +3349,8 @@ that static information.
       </a>
     </span>
       <p class="shortcomment cmt">Allows moving the drone by speed and time.</p><div class="fullcomment"><div class="comment cmt"><p>Allows moving the drone by speed and time.
-Note: time has only the granularity of 500ms as one forward command runs the drone roughly 500ms</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Scratch command id</p></dd><dt class="param">speed</dt><dd class="cmt"><p>as number from 10 to ~100</p></dd><dt class="param">time</dt><dd class="cmt"><p>in ms but has a granularity of 500ms</p></dd></dl></div>
+Note: time has only the granularity of 500ms as one forward command runs the drone roughly 500ms
+</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>Scratch command id</p></dd><dt class="param">speed</dt><dd class="cmt"><p>as number from 10 to ~100</p></dd><dt class="param">time</dt><dd class="cmt"><p>in ms but has a granularity of 500ms</p></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -3350,6 +3368,40 @@ Note: time has only the granularity of 500ms as one forward command runs the dro
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="controllers.Application#getPhoto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getPhoto(id:Int):play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
+      <a id="getPhoto(Int):Action[AnyContent]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPhoto</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#controllers.Application$@getPhoto(id:Int):play.api.mvc.Action[play.api.mvc.AnyContent]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Return the latest JPG of the videostream</p>
+    </li><li name="controllers.Application#getVideoFrame" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getVideoFrame:play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
+      <a id="getVideoFrame:Action[AnyContent]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getVideoFrame</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#controllers.Application$@getVideoFrame:play.api.mvc.Action[play.api.mvc.AnyContent]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -3418,6 +3470,23 @@ Note: time has only the granularity of 500ms as one forward command runs the dro
       </a>
     </span>
       
+    </li><li name="controllers.Application#isFrameAvailable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isFrameAvailable:play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
+      <a id="isFrameAvailable:Action[AnyContent]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isFrameAvailable</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#controllers.Application$@isFrameAvailable:play.api.mvc.Action[play.api.mvc.AnyContent]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -3435,6 +3504,23 @@ Note: time has only the granularity of 500ms as one forward command runs the dro
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="controllers.Application#isVideoOn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isVideoOn:play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
+      <a id="isVideoOn:Action[AnyContent]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isVideoOn</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#controllers.Application$@isVideoOn:play.api.mvc.Action[play.api.mvc.AnyContent]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="controllers.Application#jump" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="jump(id:Int,jumpType:String):play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
       <a id="jump(Int,String):Action[AnyContent]"></a>
@@ -3465,6 +3551,40 @@ Note: time has only the granularity of 500ms as one forward command runs the dro
       </span>
       </h4><span class="permalink">
       <a href="../index.html#controllers.Application$@left(id:Int,degrees:Int):play.api.mvc.Action[play.api.mvc.AnyContent]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="controllers.Application#maxPhotos" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="maxPhotos:Int"></a>
+      <a id="maxPhotos:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maxPhotos</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#controllers.Application$@maxPhotos:Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="controllers.Application#monitor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="monitor:play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
+      <a id="monitor:Action[AnyContent]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">monitor</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#controllers.Application$@monitor:play.api.mvc.Action[play.api.mvc.AnyContent]" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -3537,6 +3657,23 @@ Note: time has only the granularity of 500ms as one forward command runs the dro
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="controllers.Application#photos" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="photos:Array[Array[Byte]]"></a>
+      <a id="photos:Array[Array[Byte]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">photos</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#controllers.Application$@photos:Array[Array[Byte]]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="controllers.Application#poll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="poll():play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
       <a id="poll():Action[AnyContent]"></a>
@@ -3555,7 +3692,8 @@ Note: time has only the granularity of 500ms as one forward command runs the dro
     </span>
       <p class="shortcomment cmt">Service called by Scratch to ask which command is currently processed
 Only supports one command at a time currently.</p><div class="fullcomment"><div class="comment cmt"><p>Service called by Scratch to ask which command is currently processed
-Only supports one command at a time currently. Maybe extended by using a set of movementIds....</p></div></div>
+Only supports one command at a time currently. Maybe extended by using a set of movementIds....
+</p></div></div>
     </li><li name="controllers.Application#port" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="port:Int"></a>
       <a id="port:Int"></a>
@@ -3677,7 +3815,8 @@ Only supports one command at a time currently. Maybe extended by using a set of 
       <p class="shortcomment cmt">Method that sets up the monitoring of the last command.</p><div class="fullcomment"><div class="comment cmt"><p>Method that sets up the monitoring of the last command.
 The way it works is that for specially marked command scratch provides a unique id for the
 call. As long as the command is being executed this id should be reported back to Scratch
-when it calls the poll service</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>unique id of a sent command to keep track of it that is still running</p></dd><dt class="param">command</dt><dd class="cmt"><p>command that should be executed</p></dd></dl></div>
+when it calls the poll service
+</p></div><dl class="paramcmts block"><dt class="param">id</dt><dd class="cmt"><p>unique id of a sent command to keep track of it that is still running</p></dd><dt class="param">command</dt><dd class="cmt"><p>command that should be executed</p></dd></dl></div>
     </li><li name="controllers.Application#sumoClose" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="sumoClose:play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
       <a id="sumoClose:Action[AnyContent]"></a>
@@ -3729,6 +3868,23 @@ when it calls the poll service</p></div><dl class="paramcmts block"><dt class="p
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="controllers.Application#takePhoto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="takePhoto(id:Int):play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
+      <a id="takePhoto(Int):Action[AnyContent]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">takePhoto</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#controllers.Application$@takePhoto(id:Int):play.api.mvc.Action[play.api.mvc.AnyContent]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
@@ -3759,6 +3915,23 @@ when it calls the poll service</p></div><dl class="paramcmts block"><dt class="p
       </span>
       </h4><span class="permalink">
       <a href="../index.html#controllers.Application$@trick(id:Int,trick:String):play.api.mvc.Action[play.api.mvc.AnyContent]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="controllers.Application#video" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="video(id:Int,switch:String):play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
+      <a id="video(Int,String):Action[AnyContent]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">video</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="switch">switch: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="play.api.mvc.Action">Action</span>[<span class="extype" name="play.api.mvc.AnyContent">AnyContent</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#controllers.Application$@video(id:Int,switch:String):play.api.mvc.Action[play.api.mvc.AnyContent]" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

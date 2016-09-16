@@ -4,15 +4,13 @@
 # ![Devoxx4Kids](./app/views/jumping-sumo.jpg)  Sumo4scratch  ![Devoxx4Kids](./app/views/jumping-sumo-flipped.jpg)
 *from Stefan Höhn*
 
--- (beta version) --
-
 [Tobias Schneider]: https://github.com/derTobsch
 [Scratch-Offline-Editor]: https://scratch.mit.edu/scratch2download/
 [Jumping Sumo Drone]: http://www.parrot.com/usa/products/jumping-sumo/
 [Parrot]: http://www.parrot.com/
-Proxy __Server__ Implementation __to bridge Jumping Sumo commands__ within the [Scratch-Offline-Editor] with the help of the [DroneController-Library] (by [Tobias Schneider]) via Wireless to the [Jumping Sumo Drone] from [Parrot] as well as the necessary __Scratch Extension__.
+Proxy __Server__ Implementation __to bridge Jumping Sumo commands__ within the [Scratch-Offline-Editor] with the help of the [controllers.DroneController-Library] (by [Tobias Schneider]) via Wireless to the [Jumping Sumo Drone] from [Parrot] as well as the necessary __Scratch Extension__.
 
-[DroneController-Library]: https://github.com/Devoxx4KidsDE/drone-controller
+[controllers.DroneController-Library]: https://github.com/Devoxx4KidsDE/drone-controller
 [activator]: https://www.lightbend.com/activator/download
 
 ## Instructions
@@ -61,14 +59,18 @@ The usage of the blocks is straight forward and rather obvious.
 	* Move in any direction (even with providing __speed and time__)
 	* Turn by providing the angle in degrees
 	* Jump high and far
+	* Show __video and take photos__ (new!)
 	* Do some __tricks__
 
-Note: Currently only command at a time is supported.
 
 [sumo-programm_de.sb2]: https://github.com/Devoxx4KidsDE/sumo4scratch/tree/master/Scratch/de/sumo-programm.sb2
 [sumo-programm_en.sb2]: https://github.com/Devoxx4KidsDE/sumo4scratch/tree/master/Scratch/en/sumo-programm.sb2
 
 There is a __sample program__ for Scratch for __each__ language that you can find in the root directory of the project which is called [sumo-programm_de.sb2] or [sumo-programm_en.sb2] .
+
+Also there is a __cool web page__ that allows to show the __video__ of the drone and to show __captured photos__ which can be accessed via http://localhost:9000/monitor.
+
+![Video and Photo web page](./monitor.png)
 
 This is how it looks like in Scratch:
 

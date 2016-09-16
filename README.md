@@ -27,6 +27,15 @@ Everything you need is supplied within the download. Basically you need the foll
 * **Running Samples** how to use it within Scratch that can be found in [german](./Scratch/de/sumo-programm.sb2) or in [english](./Scratch/en/sumo-programm.sb2)
 * a complete workshop that shows step by step instructions for the kids and the mentor
 
+### Running the bridge
+
+* The download contains the fully functional server (brigde). Go to the sumo4scratch-1.0/bin directory and start the server that connects the jumping sumo with a Scratch by typing ./sumo4scratch (on linux or max - in case execution does not work make sure the file is executable by applying "chmod 777") or sumo4scratch.bat (on windows).
+
+* When the server it is up it will say "Application started" in the console. You can also check if the server is running by going to http://localhost:9000/monitor. If you are provided with web page with a mars environment the server is running fine.
+
+* Then switch on the Jumping Sumo. The drone will provide a wifi network after it has fully started (they eyes will turn green). Choose that wifi network on you computer and connect to it.
+
+* Now follow the next steps to start Scratch
 
 
 ### Setup Scratch to Sumo4Scratch
@@ -42,6 +51,7 @@ Everything you need is supplied within the download. Basically you need the foll
 * Then you can go to the "more block" section of script tab and you will recognize the Jumping Sumo section.
 * Drop the blocks into the code and have fun.
 * One more thing: of course you need to connect your wireless to the sumo first to be able to connect to it.
+* You can find examples files that you can open in the Scratch Editor, namely "sumo-programm_de.sb2" and "fotovideo.sb2". The latter shows an idea how you can use the video functionality together with the web page (http://localhost:9000/monitor), which is a lot of fun.
 
 [localization-behaviour]: https://scratch.mit.edu/discuss/topic/191003/
 *Note:* In the current Scratch version I am using (445.2), extensions do not really have a complete support for localizations. Scratch seems to save the extension configuration in your program. See more at this description where I explained that [localization-behaviour].
@@ -50,15 +60,13 @@ Everything you need is supplied within the download. Basically you need the foll
 
 The usage of the blocks is straight forward and rather obvious.
 
-* use the *Connection* Block first, when a scratch program is started. With the block you can define to which drone you like to connect. If you have only one drone, just go for the default.
+* Important: use the *Connection* Block ("Connect Sumo") first, when a scratch program is started ("when green flag clicked"). With the block you can define to which drone you like to connect. The provided example programs (see below) exactly do it that way.
 * There is also a *Sumo off* with which you can disconnect that can be used. Of course, after that you need use the *Connect* again
 * Now you can
 	* Move in any direction (even with providing __speed and time__)
 	* Turn by providing the angle in degrees
 	* Jump high and far
 	* Do some __tricks__
-
-Note: Currently only command at a time is supported.
 
 [sumo-programm_de.sb2]: https://github.com/Devoxx4KidsDE/sumo4scratch/tree/master/Scratch/de/sumo-programm.sb2
 [sumo-programm_en.sb2]: https://github.com/Devoxx4KidsDE/sumo4scratch/tree/master/Scratch/en/sumo-programm.sb2
