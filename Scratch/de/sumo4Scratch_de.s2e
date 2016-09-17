@@ -15,6 +15,7 @@
   		["w", "Kunststück %m.trickType", "trick", "Drehung"],
   		["w", "Video %m.switch", "video","an"],
   		["w", "Fotografieren", "takephoto"],
+  		["r", "Batterie", "batterylevel"],
 		[" ", "Sumo aus", "close"],
     ],
     "menus": {

@@ -14,9 +14,12 @@ GET        /monitor                          controllers.Application.monitor
 
 # Function support for monitor page
 GET        /app/videoframe                   controllers.Application.getVideoFrame()
+GET        /app/photo/:id                    controllers.Application.getPhoto(id: Int)
+# I know it would be more elegant to retrieve all information via one method but currently I don´t have the time
+# to refactor it
 GET        /app/isframeavailable             controllers.Application.isFrameAvailable()
 GET        /app/isvideoon                    controllers.Application.isVideoOn()
-GET        /app/photo/:id                    controllers.Application.getPhoto(id: Int)
+
 
 # Scratch commands
 GET        /start                            controllers.Application.sumoConnect(ip:String = "192.168.2.1", port:Int= 44444)
@@ -26,9 +29,9 @@ GET        /forward/:id/:speed/:time         controllers.Application.forward(id:
 GET        /backward2/:id                    controllers.Application.backward(id: Int, speed: Int = 40, time: Int = 500)
 GET        /backward/:id/:speed/:time        controllers.Application.backward(id: Int, speed: Int, time: Int)
 GET        /right/:id                        controllers.Application.right(id: Int, degrees: Int = 90)
-GET        /right2/:id/:degrees               controllers.Application.right(id: Int, degrees: Int)
+GET        /right2/:id/:degrees              controllers.Application.right(id: Int, degrees: Int)
 GET        /left/:id                         controllers.Application.left(id: Int, degrees: Int = 90)
-GET        /left2/:id/:degrees                controllers.Application.left(id: Int, degrees: Int)
+GET        /left2/:id/:degrees               controllers.Application.left(id: Int, degrees: Int)
 GET        /jump/:id/:jumpType               controllers.Application.jump(id: Int, jumpType:String)
 GET        /trick/:id/:trickType             controllers.Application.trick(id: Int, trickType:String)
 GET        /video/:id/:switch                controllers.Application.video(id: Int, switch:String)

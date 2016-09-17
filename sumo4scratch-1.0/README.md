@@ -8,7 +8,8 @@
 [Scratch-Offline-Editor]: https://scratch.mit.edu/scratch2download/
 [Jumping Sumo Drone]: http://www.parrot.com/usa/products/jumping-sumo/
 [Parrot]: http://www.parrot.com/
-Proxy __Server__ Implementation __to bridge Jumping Sumo commands__ within the [Scratch-Offline-Editor] with the help of the [controllers.DroneController-Library] (by [Tobias Schneider]) via Wireless to the [Jumping Sumo Drone] from [Parrot] as well as the necessary __Scratch Extension__.
+[Scratch-Extensions]: https://wiki.scratch.mit.edu/w/images/ExtensionsDoc.HTTP-9-11.pdf
+Proxy __Server__ Implementation __to bridge Jumping Sumo commands__ within the [Scratch-Offline-Editor] with the help of the [controllers.DroneController-Library] (by [Tobias Schneider]) via Wireless to the [Jumping Sumo Drone] from [Parrot] as well as the necessary __[Scratch-Extensions]__.
 
 [controllers.DroneController-Library]: https://github.com/Devoxx4KidsDE/drone-controller
 [activator]: https://www.lightbend.com/activator/download
@@ -32,7 +33,7 @@ __To build the server__ the setup is pretty simple. All you need to have, is at 
 * Enter "dist" and return. It will then build a zip-file with all required dependencies. It will tell you at the end what the location is where the zip was saved.
 * Now you can distribute that zip file to anyone. The system that you run it on should have at least Java 8 installed.
 
-### Setup Scratch to Sumo4Scratch
+### Setup Scratch for Sumo4Scratch
 
 *Language of the extension*: Two different extension files are provided for German and English.
 

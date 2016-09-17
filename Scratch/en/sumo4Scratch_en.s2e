@@ -15,6 +15,7 @@
   		["w", "Trick %m.trickType", "trick", "Spin"],
   		["w", "Video %m.switch", "video","on"],
   		["w", "Take Photo", "takephoto"],
+  		["r", "Battery", "batterylevel"],
 		[" ", "Sumo Off", "close"],
     ],
     "menus": {
