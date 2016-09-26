@@ -21,8 +21,9 @@
     <logger name="play" level="INFO"/>
     <logger name="de.devoxx4kids.dronecontroller" level="INFO" />
     <logger name="controllers" level="INFO" />
-    <logger name="de.devoxx4kids.dronecontroller.listener.multimedia" level="INFO" />
-    <logger name="de.devoxx4kids.dronecontroller.network" level="INFO" />
+
+    <logger name="de.devoxx4kids.dronecontroller.listener.multimedia" level="DEBUG" />
+    <logger name="de.devoxx4kids.dronecontroller.network" level="DEBUG" />
 
 
     <root level="INFO">
