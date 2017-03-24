@@ -27,6 +27,15 @@ Everything you need is supplied within the download. Basically you need the foll
 * **Running Samples** how to use it within Scratch that can be found in [german](./Scratch/de/sumo-programm.sb2) or in [english](./Scratch/en/sumo-programm.sb2)
 * a complete workshop that shows step by step instructions for the kids and the mentor
 
+### Getting started with Ubuntu 16.10
+
+* Install Adobe Air 2.6.0
+```
+wget -O adobe-air_amd64.deb http://drive.noobslab.com/data/apps/AdobeAir/adobeair_2.6.0.2_amd64.deb
+sudo apt-get install -f && rm adobe-air_amd64.deb
+```
+* See Setup Scratch to Sumo4Scratch
+
 ### Running the bridge
 
 * The download contains the fully functional server (brigde). Go to the sumo4scratch-1.0/bin directory and start the server that connects the jumping sumo with a Scratch by typing ./sumo4scratch (on linux or max - in case execution does not work make sure the file is executable by applying "chmod 777") or sumo4scratch.bat (on windows).
