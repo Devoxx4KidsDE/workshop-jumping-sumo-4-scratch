@@ -32,6 +32,7 @@ Everything you need is supplied within the download. Basically you need the foll
 * Install Adobe Air 2.6.0
 ```
 wget -O adobe-air_amd64.deb http://drive.noobslab.com/data/apps/AdobeAir/adobeair_2.6.0.2_amd64.deb
+sudo dpkg -i adobe-air_amd64.deb
 sudo apt-get install -f && rm adobe-air_amd64.deb
 ```
 * See Setup Scratch to Sumo4Scratch
