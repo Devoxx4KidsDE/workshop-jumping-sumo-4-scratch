@@ -1,7 +1,7 @@
-![Devoxx4Kids](./app/views/logo.jpg)
+![Devoxx4Kids](./public/images/logo.jpg)
 
 
-# ![Devoxx4Kids](./app/views/jumping-sumo.jpg)  Sumo4scratch  ![Devoxx4Kids](./app/views/jumping-sumo-flipped.jpg)
+# ![Devoxx4Kids](./jumping-sumo.jpg)  Sumo4scratch  ![Devoxx4Kids](./jumping-sumo-flipped.jpg)
 *from Stefan Höhn*
 
 [Tobias Schneider]: https://github.com/derTobsch
