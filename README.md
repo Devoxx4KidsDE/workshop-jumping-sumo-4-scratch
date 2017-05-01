@@ -38,7 +38,7 @@ You have to ignore the dependency errors here:
 sudo dpkg -i adobe-air_amd64.deb
 sudo apt-get install -f && rm adobe-air_amd64.deb
 ```
-* See Setup Scratch to Sumo4Scratch
+* See [Setup Scratch to Sumo4Scratch](https://github.com/Devoxx4KidsDE/workshop-jumping-sumo-4-scratch#setup-scratch-to-sumo4scratch)
 
 ### Running the bridge
 
