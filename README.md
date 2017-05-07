@@ -27,10 +27,9 @@ Everything you need is supplied within the download. Basically you need the foll
 * **Running Samples** how to use it within Scratch that can be found in [german](./Scratch/de/sumo-programm.sb2) or in [english](./Scratch/en/sumo-programm.sb2)
 * a complete workshop that shows step by step instructions for the kids and the mentor
 
-### Getting started with Ubuntu 16.10
+### Install Adobe Air 2.6.0 on Ubuntu 16.10
 
 #### 64 Bit version
-* Install Adobe Air 2.6.0
 ```
 wget -O adobe-air_amd64.deb http://drive.noobslab.com/data/apps/AdobeAir/adobeair_2.6.0.2_amd64.deb
 ```
@@ -47,6 +46,17 @@ You have to ignore the dependency errors here:
 ```
 sudo dpkg -i adobe-air_i386.deb
 sudo apt-get install -f && rm adobe-air_i386.deb
+```
+
+### Install Adobe Air 2.6.0 on Ubuntu 16.04/14.04/12.04/Linux Mint 18/17/13
+```
+wget -O adobe-air.sh http://drive.noobslab.com/data/apps/AdobeAir/adobe-air.sh
+chmod +x adobe-air.sh;sudo ./adobe-air.sh
+```
+
+To uninstall:
+```
+sudo apt-get autoremove adobeair
 ```
 
 * See [Setup Scratch to Sumo4Scratch](https://github.com/Devoxx4KidsDE/workshop-jumping-sumo-4-scratch#setup-scratch-to-sumo4scratch)
