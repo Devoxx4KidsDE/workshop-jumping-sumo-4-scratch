@@ -78,8 +78,9 @@ sudo apt-get autoremove adobeair
 
 [sumo4Scratch.s2e-german]:  https://github.com/Devoxx4KidsDE/sumo4scratch/tree/master/Scratch/de/sumo4Scratch_de.s2e
 [sumo4Scratch.s2e-english]: https://github.com/Devoxx4KidsDE/sumo4scratch/tree/master/Scratch/en/sumo4Scratch_en.s2e
+[Scratch directory]:  https://github.com/Devoxx4KidsDE/sumo4scratch/tree/master/Scratch/
 
-* Download the file [sumo4Scratch.s2e-german] or [sumo4Scratch.s2e-english] from github and save it at a convenient place as you need to open it from Scratch later on.
+* Download the [Scratch directory] from github and save it at a convenient place as you need to open it to open the [sumo4Scratch.s2e-german] or [sumo4Scratch.s2e-english] file, with the jumping sumo bricks from Scratch, later on.
 * You need to have the [Scratch-Offline-Editor] of Scratch running
 * After you have started Scratch, open "File" while *holding SHIFT* at the same time. This reveals a secret menu entry "Import Experimental Extension". Now you can chose the file [sumo4Scratch.s2e-german] or [sumo4Scratch.s2e-english] which will be loaded by scratch.
 * Then you can go to the "more block" section of script tab and you will recognize the Jumping Sumo section.
